@@ -42,6 +42,7 @@ jobs:
       # https://docs.github.com/articles/workflow-syntax-for-github-actions#jobsjob_idstepsrun
       run: |
          mvn -B package --file pom.xml
+         pwd
          ls -aLF
 
     - name: Login to Docker Hub
